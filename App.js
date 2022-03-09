@@ -11,10 +11,25 @@ const App = () => {
     console.log({email});
     console.log({password});
   };
-
+  
+//input username and email
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.title}>TextInput Exercise</Text>
+      <Text style={styles.title}>TextInput Exercise </Text>
+
+      ‹TextInput
+         style={styles.input}
+         value={username}
+         placeholder="Username"
+         onChangeText={username =› setUserName (username) }
+      />
+
+      ‹TextInput
+         style={styles.input}
+         value={email},
+         placeholder-"Email"
+         onChangeText={email =› setEmail (email)}
+      />
     </SafeAreaView>
   );
 };
