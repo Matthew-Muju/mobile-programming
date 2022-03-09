@@ -18,5 +18,33 @@ const App = () => {
     </SafeAreaView>
   );
 };
-//
+
+//Styling
+const styles = StyleSheet.create({
+  container: {
+    marginTop: 25,
+    marginLeft: 50,
+    marginRight: 50,
+    paddingBottom: 20,
+  },
+  input: {
+    height: 40;
+    margin: 12,
+    borderWidth: 1,
+    padding: 10,
+  },
+  title: {
+    color: 'black',
+    fontWeight: 'bold',
+    fontSize: 25,
+    textAlign: 'center',
+  },
+  button: {
+    fontWeight: 'bold',
+    fontSize: 20,
+    paddingTop: 30,
+    marginTop: 20,
+  },
+});
+
 export default App;
