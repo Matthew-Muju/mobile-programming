@@ -40,7 +40,7 @@ const App = () => {
       />
 
       <Button style={styles.button} title="Submit" onPress={onSubmit} />
-      />
+      
     </SafeAreaView>
   );
 };
