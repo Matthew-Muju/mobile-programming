@@ -29,6 +29,7 @@ const App = () => {
          value={email}
          placeholder-"Email"
          onChangeText={email =› setEmail (email)}
+      />
 
        <TextInput
         secureTextEntry={true}
