@@ -29,6 +29,16 @@ const App = () => {
          value={email},
          placeholder-"Email"
          onChangeText={email =› setEmail (email)}
+
+       <TextInput
+        secureTextEntry={true}
+        style={styles.input}
+        value={password}
+        placeholder="Password"
+        onChangeText={password => setPassword(password)}
+      />
+
+      <Button style={styles.button} title="Submit" onPress={onSubmit} />
       />
     </SafeAreaView>
   );
