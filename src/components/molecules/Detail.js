@@ -16,6 +16,7 @@ export default Detail
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    paddingHorizontal: 24,
   },
   date: {
     fontFamily: 'Poppins-Regular',

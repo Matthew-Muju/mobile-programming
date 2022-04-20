@@ -6,11 +6,15 @@ import { Gap } from '../atoms'
 const Header = ({title, onBack}) => {
   return (
     <View style={styles.container}>
-      <TouchableOpacity onPress={onBack} activeOpacity={0.7} >
-        <View style={styles.back}>
-          <IconBack />
-        </View>
-      </TouchableOpacity>
+      {
+        onBack && (
+          <TouchableOpacity onPress={onBack} activeOpacity={0.7} >
+            <View style={styles.back}>
+            <IconBack/>
+            </View>
+          </TouchableOpacity>
+        )
+      }
       <Gap width={26} />
       <Text style={styles.text}>{title}</Text>
     </View>
@@ -31,9 +35,9 @@ const styles = StyleSheet.create({
     text: {
         fontSize: 22,
         fontFamily: 'Poppins-Medium',
+        color: 'black',
     },
     back: {
-        backgroundColor: 'blue',
         padding: 10,
     }
 })

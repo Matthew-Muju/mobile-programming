@@ -1,8 +1,8 @@
 import React from "react";
-import {createStackNavigator} from '@react-navigation/native-stack';
-import { SignIn, SignUp, SplashScreen } from "./pages";
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import { SignIn, SignUp, SplashScreen, Home, CashOnHand, CashOnBank } from "./pages";
 
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 const Router = () => {
     return (
@@ -20,6 +20,21 @@ const Router = () => {
             <Stack.Screen 
                 name="SignUp"
                 component={SignUp}
+                options={{headerShown: false}}
+            />
+            <Stack.Screen 
+                name="Home"
+                component={Home}
+                options={{headerShown: false}}
+            />
+            <Stack.Screen 
+                name="CashOnHand"
+                component={CashOnHand}
+                options={{headerShown: false}}
+            />
+            <Stack.Screen 
+                name="CashOnBank"
+                component={CashOnBank}
                 options={{headerShown: false}}
             />
         </Stack.Navigator>
