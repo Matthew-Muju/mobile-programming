@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Detail, Header, Gap, Button, TextInput } from '../components'
+import TransactionCard from '../components/molecules/TransactionCard'
 
 const CashOnHand = ({navigation}) => {
   return (
@@ -16,10 +17,9 @@ const CashOnHand = ({navigation}) => {
             <Gap height={24} />
         </View>
         <View style={styles.last3Wrapper}>
+            <Gap height={16} /> 
             <Text style={styles.lastTitle}>Last 3 Transactions</Text>
-            <Detail dateTitle="17 April 2020" itemTitle="Water, Food" balanceTitle="-Rp.300.000" textColor='#D9435E' />
-            <Detail dateTitle="18 April 2020" itemTitle="Office Supplies" balanceTitle="-Rp.300.000" textColor='#D9435E' />
-            <Detail dateTitle="19 April 2020" itemTitle="Top Up" balanceTitle="+Rp.300.000" />
+            <TransactionCard />
         </View>
     </View>
   )

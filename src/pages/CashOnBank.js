@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Detail, Header, Gap, Button, TextInput } from '../components'
+import TransactionCard from '../components/molecules/TransactionCard'
 
 const CashOnBank = ({navigation}) => {
   return (
@@ -19,7 +20,7 @@ const CashOnBank = ({navigation}) => {
         </View>
         <View style={styles.last3Wrapper}>
             <Text style={styles.lastTitle}>Last 3 Transactions</Text>
-            
+            <TransactionCard/>
         </View>
     </View>
   )
